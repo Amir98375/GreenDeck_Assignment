@@ -1,0 +1,61 @@
+.container{
+    width: 30%;
+    margin: auto;
+  
+  
+}
+.navbar{
+    height: 70px;
+    width: 100%;
+    background-color:teal;
+    border: 1px solid grey;
+   
+}
+.navbarclass{
+    display: flex;
+    list-style: none;
+    color: white;
+    justify-content: space-around;
+    font-size: larger;
+}
+body{
+    background-color: #313342;
+}
+.inputemail{
+    width: 99%;
+  
+    height: 70px;
+    background-color: #313342;
+    border-left: none;
+    border-right: none;
+   border-top: 1px solid grey;
+   border-bottom: 1px solid grey;
+   color: white;
+  
+}
+
+.main{
+    background-color: #313342;
+}
+::placeholder{
+    text-align: center;
+    font-size: larger;
+}
+.parasign{
+    color: white;
+}
+.buttonlogin{
+    height: 50px;
+    width: 90%;
+    border-radius: 20px;
+    background-color: #545967;
+    color:gray;
+    border: none;
+    margin: auto;
+}
+.blue{
+    color: blueviolet;
+}
+hr{
+    background-color:grey;
+}
