@@ -7,10 +7,12 @@ import { Signup } from './Signup'
 export const AllRoutes = () => {
   return (
     <div>
+      
         <Routes>
-            <Route path='/' element={<Signup/>}/>
+        
+            <Route path='/signup' element={<Signup/>}/>
             <Route path='/login'  element={<Login/>}/>
-            <Route path='/home' element={<Home/>}/>
+            <Route path='/' element={<Home/>}/>
             <Route path='/admin' element={<AdminPanel/>}/>
         </Routes>
     </div>
