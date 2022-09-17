@@ -1,0 +1,55 @@
+.container{
+    width: 35%;
+    margin: auto;
+  
+  
+}
+body{
+    background-color: #313342;
+}
+.inputemail{
+    width: 99%;
+  
+    height: 70px;
+    background-color: #313342;
+    border-left: none;
+    border-right: none;
+   border-top: 1px solid grey;
+   border-bottom: 1px solid grey;
+   color: white;
+  
+}
+.inputpass{
+    width: 99%;
+    border: 1px solid grey;
+    height: 70px;
+    background-color: #313342;
+    border-left: none;
+    color: white;
+    border-right: none;
+   border-bottom: 1px solid grey;
+   border-top: none;
+}
+.main{
+    background-color: #313342;
+}
+::placeholder{
+    text-align: center;
+    font-size: larger;
+}
+.para{
+    color: white;
+}
+.buttonlogin{
+    height: 50px;
+    width: 90%;
+    border-radius: 20px;
+    background-color: #545967;
+    color: white;
+    border: none;
+    margin: auto;
+}
+.blue{
+    color: blueviolet;
+    cursor: pointer;
+}
