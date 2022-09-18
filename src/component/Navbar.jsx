@@ -22,7 +22,7 @@ console.log(isAuthenticate)
         <nav className='navbar'>
             <ul className='navbarclass'>
                 <li onClick={()=>(navigate('/'))} >home</li>
-                <li onClick={()=>(navigate('/admin'))}>Registerd users</li>
+                <li onClick={()=>(navigate('/admin'))}>Registered users</li>
                 <li className='auth1' >{isAuthenticate?
                 <div className='auth' ><p >
                     {detail}</p> <p  style={{'color':'white' ,backgroundColor:"black"
