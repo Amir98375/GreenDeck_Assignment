@@ -18,13 +18,13 @@ const handleLogin = ()=>{
   const loginCridential = {
     email,
     password,
-    role
+ 
   }
   // console.log(loginCridential);
   dispatch(login(loginCridential,dispatch));
   if(isAuthenticate){
     dispatch(getUser(token,dispatch))
-   
+   navigate('/admin')
 }
 }
 console.log(data,"datalogincredentials")
@@ -32,20 +32,20 @@ console.log(data,"datalogincredentials")
 useEffect(()=>{
     if(isAuthenticate){
         dispatch(getUser(token,dispatch))
-        checktonavigate()
+       
     }
   
 },[])
 // console.log(isAuthenticate,token)
-const checktonavigate=()=>{
-//  console.log(data.role)
-//  console.log(data.email)
-if(data.role=="admin"||data.role=="Admin"){
- navigate('/admin')
-}else{
-navigate('/home')
-}
-}
+// const checktonavigate=()=>{
+// //  console.log(data.role)
+// //  console.log(data.email)
+// if(data.role=="admin"||data.role=="Admin"){
+//  navigate('/admin')
+// }else{
+// navigate('/home')
+// }
+// }
 // checktonavigate()
   return (
     <div className='main'>

@@ -3,7 +3,9 @@ import axios from "axios"
 export const authActions={
     LOADING:"LOGIN_LOADING",
     SUCCESS:"LOGIN_SUCCESS",
-    FAILURE:"LOGIN_FAILURE"
+    FAILURE:"LOGIN_FAILURE",
+    LOGOUT:"LOGOUT"
+   
     }
 
 export const loginLoading=()=>({
@@ -31,7 +33,18 @@ export const login=(payload)=>(dispatch)=>{
     .then((res)=>{
         console.log(res,"action")
         alert("signin")
+        
         dispatch(loginSuccess({token:res.data.token}))
+       
     })
-    .catch((err)=> dispatch(loginFailure()))
+    .catch((err)=> {
+        alert("wrong email or password")
+        dispatch(loginFailure())
+    })
+}
+export const Logout=(payload)=>{
+    console.log("logoutcalled",payload)
+    return{
+        type:authActions.LOGOUT
+    }
 }

@@ -1,7 +1,7 @@
 .container{
     width: 30%;
-    margin: auto;
   
+    margin: auto;
   
 }
 .navbar{
@@ -10,6 +10,20 @@
     background-color:teal;
     border: 1px solid grey;
    
+}
+.userdetail{
+align-items: center;
+margin-left: 30px;
+
+}
+.auth{
+    display: flex;
+
+  
+}
+.auth1{
+ top: -20px;
+   position: relative;
 }
 .navbarclass{
     display: flex;

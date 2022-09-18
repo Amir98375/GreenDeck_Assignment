@@ -4,7 +4,11 @@
   
   
 }
-
+input{
+    outline:none;
+    text-align: center;
+    font-size: 25px;
+}
 .inputemail{
     width: 99%;
   

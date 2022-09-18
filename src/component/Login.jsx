@@ -18,13 +18,13 @@ export const Login = () => {
           const userData = {
        
           email:email,
-          password:password,
-         role:role,
+          password:password
+      
           
         }
         // console.log(userData);
         dispatch(registerUser(userData));
-        navigate('/')
+        navigate('/login')
         
       }
   return (
