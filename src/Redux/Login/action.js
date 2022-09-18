@@ -28,8 +28,8 @@ export const login=(payload)=>(dispatch)=>{
     dispatch(loginLoading());
 
     console.log(payload,'from payload action');
-    
-    axios.post(`http://localhost:5000/login`,payload)
+    http://35.91.29.76:5000/loggeduser
+    axios.post(`http://35.91.29.76:5000/login`,payload)
     .then((res)=>{
         console.log(res,"action")
         alert("signin")

@@ -7,7 +7,8 @@ export const userSuccess=(payload)=>({
 
 export const getUser=(token)=>(dispatch)=>{
     // console.log(token)
-    axios.get(`http://localhost:5000/loggeduser`,{
+    http://35.91.29.76:5000/allUsers
+    axios.get(`http://35.91.29.76:5000/loggeduser`,{
         headers:{
             "Authorization" : `Bearer ${token}`
         }

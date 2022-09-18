@@ -7,7 +7,7 @@ import './Home.css'
 export const AdminPanel = () => {
     const [data,setdata]=useState([])
     const getData=()=>{
-        axios.get(`http://localhost:5000/allUsers`)
+        axios.get(`http://35.91.29.76:5000/allUsers`)
         .then((res)=>setdata(res.data))
     }
     useEffect(()=>{

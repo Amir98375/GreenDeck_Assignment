@@ -23,7 +23,7 @@ export const registerUser=(payload)=>(dispatch)=>{
     
     dispatch(signupLoading());
     console.log('signupdataaconsole',payload);
-    axios.post("http://localhost:5000/register",payload)
+    axios.post("http://35.91.29.76:5000/register",payload)
     .then((res)=>{
         dispatch(signupSuccess());
         alert("signup")
