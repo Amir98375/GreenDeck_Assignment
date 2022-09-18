@@ -52,7 +52,7 @@ navigate('/home')
         <div className='container'>
             <h2 className='para'>Log In</h2>
             
-         <p className='para'>Dont have an account?<span className='blue' onClick={()=>(navigate('/login'))}>Signup</span></p>
+         <p className='para'>Dont have an account?<span className='blue' onClick={()=>(navigate('/signup'))}>Signup</span></p>
         <br></br>
        
          <input type="text" placeholder='Email'className='inputemail' onChange={(e)=>setEmail(e.target.value)} />
@@ -60,8 +60,7 @@ navigate('/home')
        
          <input type="text" placeholder='password' className='inputpass' onChange={(e)=>setPassword(e.target.value)} />
        <br />
-       <input type="text" placeholder='Role' className='inputpass' onChange={(e)=>setRole(e.target.value)} />
-       <br />
+      
        <br />
          <button className='buttonlogin' onClick={handleLogin}> Login</button>
          <br />

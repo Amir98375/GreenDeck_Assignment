@@ -35,15 +35,14 @@ export const Login = () => {
       <div className='container'>
           <h2 className='parasign'>Enter your email</h2>
           
-      <p className='para'>You’ll use it to signup to Brand Beyomd It</p>
+      <p className='para'>You’ll use it to signup to GreenDeck</p>
       <br></br>
     
       <input type="text" placeholder='Email'className='inputemail' onChange={(e)=>setEmail(e.target.value)} />
     <br />
     <input type="text" placeholder='Password'className='inputemail' onChange={(e)=>setPassword(e.target.value)} />
     <br />
-    <input type="text" placeholder='Role'className='inputemail' onChange={(e)=>setRole(e.target.value)} />
-    <br />
+   
     <br />
       <button className='buttonlogin' onClick={handleSignup}>Next</button>
     
